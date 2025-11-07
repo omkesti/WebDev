@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: lightgrey;
+}
+
+.winner,
+.drawer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#win-head,
+#draw-head {
+  font-size: 4rem;
+  margin-bottom: 5vh;
+}
+
+#wreset,
+#dreset {
+  padding: 2vh;
+  border: 0;
+  color: white;
+  background-color: black;
+  border-radius: 2vmin;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.win,
+.draw {
+  display: none;
+}
+
+#heading {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+#content-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5vh;
+}
+
+#boxes-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 40vw;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vh;
+  height: 20vh;
+  margin: 1vh;
+  border-radius: 1vmin;
+  border: 0;
+  background-color: dodgerblue;
+  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.25);
+  font-size: 10vh;
+  transition: 0.5s;
+}
+.box:disabled {
+  background-color: dodgerblue;
+  font-size: 10vh;
+  transition: 0.5s;
+  color: black;
+}
+
+#reset-btn {
+  padding: 1.5vmin;
+  border-radius: 1vmin;
+  border: 0;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  margin-top: 3vmin;
+  cursor: pointer;
+}
